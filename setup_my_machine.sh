@@ -1,18 +1,18 @@
 #!/bin/bash
 
-PERSONAL_USERNAME = "jeremy"
-PERSONAL_HOME = "/home/$PERSONAL_USERNAME"
-PERSONAL_DOTFILES_REPO = "git@github.com:IamBlueSlime/dotfiles"
-PERSONAL_DOTFILES = "$PERSONAL_HOME/dotfiles"
+PERSONAL_USERNAME="jeremy"
+PERSONAL_HOME="/home/$PERSONAL_USERNAME"
+PERSONAL_DOTFILES_REPO="git@github.com:IamBlueSlime/dotfiles"
+PERSONAL_DOTFILES="$PERSONAL_HOME/dotfiles"
 
-BASIC_PACKAGES = (
+BASIC_PACKAGES=(
 	git
 	emacs-nox
 	python3
 	nodejs
 )
 
-SERVER_PACKAGES = (
+SERVER_PACKAGES=(
 	nginx
 	certbot
 )
