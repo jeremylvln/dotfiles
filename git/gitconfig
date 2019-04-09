@@ -1,0 +1,8 @@
+[user]
+	email = jeremy.levilain@epitech.eu
+	name = Jérémy Levilain
+	signingkey = 0FF50DED71B42B3C62FE48DB103DB46AC6C2AA4C
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg2
