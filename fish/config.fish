@@ -7,7 +7,8 @@ set -gx JAVA_HOME /usr/java/jdk1.8.0_201-amd64
 
 # ALIASES
 ## Root related
-alias cat "lolcat"
+alias c "lolcat"
+alias cat "c"
 alias gp "git push"
 
 ## Editor related

@@ -12,6 +12,7 @@ ln -sf emacs/emacs.d ~/.emacs.d
 sudo dnf install fish
 ln -sf fish/config.fish ~/.config/fish/config.fish
 ln -sf fish/functions/ ~/.config/fish/functions
+ln -sf fish/completions/ ~/.config/fish/completions
 
 # GIT
 sudo dnf install git
