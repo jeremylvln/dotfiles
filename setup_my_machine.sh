@@ -4,7 +4,7 @@
 ln -sf bash/bashrc ~/.bashrc
 
 # EMACS
-sudo dnf install emacs
+sudo dnf install emacs-nox
 ln -sf emacs/emacs ~/.emacs
 ln -sf emacs/emacs.d ~/.emacs.d
 
