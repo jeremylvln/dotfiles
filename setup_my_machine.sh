@@ -21,6 +21,7 @@ if [ ! -d ~/.config/fish ]; then
 fi
 
 ln -sf $PWD/fish/config.fish ~/.config/fish/config.fish
+ln -sf $PWD/fish/config.color.fish ~/.config/fish/config.color.fish
 ln -sf $PWD/fish/functions/ ~/.config/fish/functions
 ln -sf $PWD/fish/completions/ ~/.config/fish/completions
 ln -sf $PWD/fish/fish_variables ~/.config/fish/fish_variables

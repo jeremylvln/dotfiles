@@ -22,6 +22,7 @@ end
 alias c "lolcat"
 alias cat "c"
 alias gp "git push"
+alias gpl "git pull"
 
 ## Editor related
 alias e "emacs -nw"
@@ -47,3 +48,5 @@ function fuck -d "Correct your previous console command"
     builtin history merge ^ /dev/null
   end
 end
+
+source config.color.fish
