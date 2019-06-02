@@ -1,9 +1,21 @@
 # PATH
-set -gx PATH ~/bin $PATH
-set -gx PATH ~/personal/Garden/bin $PATH
-set -gx PATH /opt/gradle/bin $PATH
-set -gx PATH /opt/apache-maven/bin $PATH
-set -gx JAVA_HOME /usr/java/jdk1.8.0_201-amd64
+if test -d ~/bin
+    set -gx PATH ~/bin $PATH
+end
+
+if test -d ~/personal/Garden
+    set -gx PATH ~/personal/Garden/bin $PATH
+end
+
+if test -d /opt/gradle
+    set -gx PATH /opt/gradle/bin $PATH
+end
+
+if test -d /opt/apache-maven
+    set -gx PATH /opt/apache-maven/bin $PATH
+end
+
+# set -gx JAVA_HOME /usr/java/jdk1.8.0_201-amd64
 
 # ALIASES
 ## Root related
