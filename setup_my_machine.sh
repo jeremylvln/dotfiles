@@ -9,22 +9,22 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # Docker
-sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
     "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # Emacs
-sudo dnf install emacs-nox
+sudo apt-get install -y emacs-nox
 ln -sf $PWD/emacs/emacs ~/.emacs
 ln -sf $PWD/emacs/emacs.d ~/.emacs.d
 
 # Fish
-sudo apt-get install fish
-sudo apt-get install util-linux-user # For `chsh` command
+sudo apt-get install -y fish
+sudo apt-get install -y util-linux-user # For `chsh` command
 
 if [ ! -d ~/.config/fish ]; then
     mkdir ~/.config/fish/
@@ -36,5 +36,5 @@ curl -fsSL https://starship.rs/install.sh | bash
 sudo chsh -s /bin/fish $USER
 
 # Git
-sudo dnf install git
+sudo apt-get install -y git
 ln -sf $PWD/git/gitconfig ~/.gitconfig
