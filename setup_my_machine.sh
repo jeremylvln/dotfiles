@@ -4,29 +4,37 @@ if [ ! -d ~/.config ]; then
     mkdir ~/.config/
 fi
 
-# BASH
-ln -sf bash/bashrc ~/.bashrc
+# Common
+sudo apt-get update
+sudo apt-get upgrade
 
-# EMACS
+# Docker
+sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo \
+    "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# Emacs
 sudo dnf install emacs-nox
 ln -sf $PWD/emacs/emacs ~/.emacs
 ln -sf $PWD/emacs/emacs.d ~/.emacs.d
 
-# FISH
-sudo dnf install fish
-sudo dnf install util-linux-user # For `chsh` command
+# Fish
+sudo apt-get install fish
+sudo apt-get install util-linux-user # For `chsh` command
 
 if [ ! -d ~/.config/fish ]; then
     mkdir ~/.config/fish/
 fi
 
 ln -sf $PWD/fish/config.fish ~/.config/fish/config.fish
-ln -sf $PWD/fish/config.color.fish ~/.config/fish/config.color.fish
-ln -sf $PWD/fish/functions/ ~/.config/fish/functions
-ln -sf $PWD/fish/completions/ ~/.config/fish/completions
-ln -sf $PWD/fish/fish_variables ~/.config/fish/fish_variables
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+curl -fsSL https://starship.rs/install.sh | bash
 sudo chsh -s /bin/fish $USER
 
-# GIT
+# Git
 sudo dnf install git
 ln -sf $PWD/git/gitconfig ~/.gitconfig

@@ -79,11 +79,11 @@
  '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes
    (quote
-    ("eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" "d3a406c5905923546d8a3ad0164a266deaf451856eca5f21b36594ffcb08413a" "ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" default)))
+    ("a2cde79e4cc8dc9a03e7d9a42fabf8928720d420034b66aecc5b665bbf05d4e9" "eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" "d3a406c5905923546d8a3ad0164a266deaf451856eca5f21b36594ffcb08413a" "ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" default)))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (fish-mode jenkins emoji-fontset rust-mode vue-mode html5-schema php-mode company neotree monokai-alt-theme monokai-theme dracula-theme undo-tree ##))))
+    (yaml-mode js3-mode typescript-mode fish-mode jenkins emoji-fontset rust-mode vue-mode html5-schema php-mode company neotree monokai-alt-theme monokai-theme dracula-theme undo-tree ##))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
