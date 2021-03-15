@@ -22,12 +22,6 @@ alias vim "vi"
 
 direnv hook fish | source
 
-function nvm
-   bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
-end
-set -x NVM_DIR ~/.nvm
-nvm use default --silent
-
 set -gx NODE_OPTIONS --max_old_space_size=4096 $NODE_OPTIONS
 
 starship init fish | source
@@ -46,6 +40,12 @@ if [ uname = "Darwin" ]
     if test -d ~/Documents/flutter
         set -gx PATH ~/Documents/flutter/bin $PATH
     end
+
+    function nvm
+        bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
+    end
+    set -x NVM_DIR ~/.nvm
+    nvm use default --silent
 
     alias j8 "set -gx JAVA_HOME (/usr/libexec/java_home -v 1.8.0_241); set -gx PATH (/usr/libexec/java_home -v 1.8.0_241)/bin $PATH"
 

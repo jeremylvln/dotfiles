@@ -32,7 +32,7 @@ fi
 
 ln -sf $PWD/fish/config.fish ~/.config/fish/config.fish
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-curl -fsSL https://starship.rs/install.sh | bash
+curl -fsSL https://starship.rs/install.sh | sudo bash
 sudo chsh -s /bin/fish $USER
 
 # Git
