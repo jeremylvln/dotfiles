@@ -38,3 +38,6 @@ sudo chsh -s /bin/fish $USER
 # Git
 sudo apt-get install -y git
 ln -sf $PWD/git/gitconfig ~/.gitconfig
+
+# Tools
+sudo apt-get install -y direnv
