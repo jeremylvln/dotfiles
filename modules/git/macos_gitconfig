@@ -1,0 +1,10 @@
+[user]
+	email = jeremy@jeremylvln.fr
+	name = Jérémy Levilain
+	signingkey = 8A8A5C3540DDE62183880B047A7DE8FCBDCE4A79
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[core]
+  editor = code --wait

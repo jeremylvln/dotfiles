@@ -1,17 +1,20 @@
 [aws]
-symbol = "  "
 disabled = true
+symbol = "  "
 
 [battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
 disabled = true
 
 [conda]
 symbol = " "
 
-[docker]
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
 symbol = " "
 
 [elixir]
@@ -20,14 +23,14 @@ symbol = " "
 [elm]
 symbol = " "
 
+[gcloud]
+disabled = true
+
 [git_branch]
 symbol = " "
 
 [golang]
 symbol = " "
-
-[haskell]
-symbol = " "
 
 [hg_branch]
 symbol = " "
@@ -53,6 +56,9 @@ symbol = " "
 [package]
 symbol = " "
 
+[perl]
+symbol = " "
+
 [php]
 symbol = " "
 
@@ -63,4 +69,10 @@ symbol = " "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = " "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
